@@ -27,8 +27,8 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-gray-400">
               <li>📍 Misori, Siaya County, Kenya</li>
-              <li>📧 info@chiengjamondo.ke</li>
-              <li>📱 +254 712 345 678</li>
+              <li>📧 alex2019ouma@gmail.com</li>
+              <li>📱 +254 794 960 818</li>
             </ul>
           </div>
         </div>

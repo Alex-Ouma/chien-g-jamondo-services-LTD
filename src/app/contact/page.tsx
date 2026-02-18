@@ -57,8 +57,8 @@ export default function ContactPage() {
               <div className="bg-blue-50 p-6 rounded-lg mb-6">
                 <h3 className="font-bold text-lg text-blue-900 mb-4">📧 Email</h3>
                 <p className="text-gray-700">
-                  <a href="mailto:info@chiengjamondo.ke" className="text-blue-600 hover:text-blue-800">
-                    info@chiengjamondo.ke
+                  <a href="mailto:alex2019ouma@gmail.com" className="text-blue-600 hover:text-blue-800">
+                    alex2019ouma@gmail.com
                   </a>
                 </p>
               </div>
@@ -66,8 +66,8 @@ export default function ContactPage() {
               <div className="bg-blue-50 p-6 rounded-lg mb-6">
                 <h3 className="font-bold text-lg text-blue-900 mb-4">📱 Phone</h3>
                 <p className="text-gray-700">
-                  <a href="tel:+254712345678" className="text-blue-600 hover:text-blue-800">
-                    +254 712 345 678
+                  <a href="tel:+254794960818" className="text-blue-600 hover:text-blue-800">
+                    +254 794 960 818
                   </a>
                 </p>
               </div>
@@ -195,17 +195,17 @@ export default function ContactPage() {
                 {
                   icon: '💻',
                   title: 'Cyber & Branding',
-                  contact: 'Email: cyber@chiengjamondo.ke'
+                  contact: 'Email: alex2019ouma@gmail.com'
                 },
                 {
                   icon: '🌾',
                   title: 'Cereal Trading',
-                  contact: 'Phone: +254 704 111 222'
+                  contact: 'Phone: +254 794960818'
                 },
                 {
                   icon: '📱',
                   title: 'Mobile Banking',
-                  contact: 'Phone: +254 712 345 678'
+                  contact: 'Phone: +254 794960818'
                 }
               ].map((service, idx) => (
                 <div key={idx} className="text-center bg-blue-50 p-6 rounded-lg">
