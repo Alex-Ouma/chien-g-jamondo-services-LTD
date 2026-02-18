@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chien'g Jamondo Services Ltd. - Website
+
+A professional, multi-service company website for Chien'g Jamondo Services Ltd., built with Next.js, React, and Tailwind CSS.
+
+## Overview
+
+Chien'g Jamondo Services Ltd. is a growing multi-service company based in Misori, Siaya County, Kenya. This website showcases our integrated services including:
+
+- **Cyber & Branding Services** - Digital solutions, printing, branding, and government services
+- **Cereal Trading** - Quality agricultural products including maize, millet, sorghum, rice, and beans
+- **Mobile Banking** - Secure financial transactions and agency banking services
+
+## Features
+
+ **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
+ **Modern UI** - Clean, professional interface with Tailwind CSS styling
+ **Mobile Navigation** - Responsive navigation menu for all devices
+ **Service Showcase** - Dedicated pages for each service division
+? **Company Information** - Comprehensive About page with mission, values, and history
+ **Contact Form** - Interactive contact form for customer inquiries
+ **Fast Performance** - Built with Next.js for optimal speed and SEO
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
-```bash
+1. Install dependencies:
+~~~~~~~~bash
+npm install
+~~~~~~~~
+
+2. Run the development server:
+~~~~~~~~bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+~~~~~~~~
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open your browser and navigate to:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 
+pm run dev - Start development server with hot reload
+- 
+pm run build - Create optimized production build
+- 
+pm start - Start production server
+- 
+pm run lint - Run ESLint to check code quality
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 16.1.6
+- **UI Library**: React 19.2.3
+- **Styling**: Tailwind CSS 4.1.18
+- **Language**: TypeScript 5.9.3
+- **Linting**: ESLint 9.39.2
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Home** (/) - Hero section, mission, core values, services overview
+- **Services** (/services) - Detailed service information
+- **About** (/about) - Company profile, mission, history, leadership
+- **Contact** (/contact) - Contact form and information
 
-## Deploy on Vercel
+## Production Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Easily deploy to:
+- Vercel (recommended for Next.js)
+- AWS Amplify
+- Netlify
+- Azure Static Web Apps
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Support
+
+For questions or support, contact:
+- Email: info@chiengjamondo.ke
+- Phone: +254 712 345 678
+- Location: Misori, Siaya County, Kenya
+
+## License
+
+This website is the property of Chien'g Jamondo Services Ltd.
