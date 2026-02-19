@@ -12,6 +12,8 @@ export default function ContactPage() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -19,15 +21,39 @@ export default function ContactPage() {
       ...prev,
       [name]: value
     }));
+    setError(null);
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // In a real application, you would send this data to a backend
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-    setTimeout(() => setSubmitted(false), 5000);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+      
+      const response = await fetch(`${BACKEND_URL}/api/messages`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
+      setSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An error occurred. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -89,6 +115,12 @@ export default function ContactPage() {
               {submitted && (
                 <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
                   ✓ Thank you! Your message has been sent successfully. We'll get back to you soon.
+                </div>
+              )}
+
+              {error && (
+                <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
+                  ✗ Error: {error}
                 </div>
               )}
 
@@ -179,9 +211,14 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-900 text-white font-bold py-3 rounded-lg hover:bg-blue-800 transition"
+                  disabled={loading}
+                  className={`w-full font-bold py-3 rounded-lg transition ${
+                    loading
+                      ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
+                      : 'bg-blue-900 text-white hover:bg-blue-800'
+                  }`}
                 >
-                  Send Message
+                  {loading ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </div>
