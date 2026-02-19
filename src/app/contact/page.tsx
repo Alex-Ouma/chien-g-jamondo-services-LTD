@@ -57,8 +57,8 @@ export default function ContactPage() {
               <div className="bg-blue-50 p-6 rounded-lg mb-6">
                 <h3 className="font-bold text-lg text-blue-900 mb-4">📧 Email</h3>
                 <p className="text-gray-700">
-                  <a href="mailto:alex2019ouma@gmail.com" className="text-blue-600 hover:text-blue-800">
-                    alex2019ouma@gmail.com
+                  <a href="mailto:tonnymosesowino@gmail.com" className="text-blue-600 hover:text-blue-800">
+                    tonnymosesowino@gmail.com
                   </a>
                 </p>
               </div>
@@ -66,8 +66,8 @@ export default function ContactPage() {
               <div className="bg-blue-50 p-6 rounded-lg mb-6">
                 <h3 className="font-bold text-lg text-blue-900 mb-4">📱 Phone</h3>
                 <p className="text-gray-700">
-                  <a href="tel:+254794960818" className="text-blue-600 hover:text-blue-800">
-                    +254 794 960 818
+                  <a href="tel:+254703615836" className="text-blue-600 hover:text-blue-800">
+                    +254 703 615 836
                   </a>
                 </p>
               </div>
@@ -195,17 +195,17 @@ export default function ContactPage() {
                 {
                   icon: '💻',
                   title: 'Cyber & Branding',
-                  contact: 'Email: alex2019ouma@gmail.com'
+                  contact: 'Email: tonnymosesowino@gmail.com'
                 },
                 {
                   icon: '🌾',
                   title: 'Cereal Trading',
-                  contact: 'Phone: +254 794960818'
+                  contact: 'Phone: +254 703615836'
                 },
                 {
                   icon: '📱',
                   title: 'Mobile Banking',
-                  contact: 'Phone: +254 794960818'
+                  contact: 'Phone: +254 703615836'
                 }
               ].map((service, idx) => (
                 <div key={idx} className="text-center bg-blue-50 p-6 rounded-lg">

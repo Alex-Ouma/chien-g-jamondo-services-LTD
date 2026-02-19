@@ -74,8 +74,8 @@ Easily deploy to:
 ## Support
 
 For questions or support, contact:
-- Email: info@chiengjamondo.ke
-- Phone: +254 712 345 678
+- Email: tonnymosesowino@gmail.com
+- Phone: +254 703615836
 - Location: Misori, Siaya County, Kenya
 
 ## License
