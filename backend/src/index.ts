@@ -12,9 +12,10 @@ import express, { Express } from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import messagesRoutes from './routes/messages';
+import dbConnect from './config/database';
 
 const app: Express = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
@@ -46,9 +47,17 @@ app.use((req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`✅ Server is running on http://localhost:${PORT}`);
   console.log(`📝 Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:3000'}`);
+  
+  // Connect to MongoDB on startup
+  try {
+    await dbConnect();
+    console.log(`🗄️  MongoDB connected successfully`);
+  } catch (error: any) {
+    console.error('❌ MongoDB connection error:', error.message);
+  }
 });
 
 export default app;
