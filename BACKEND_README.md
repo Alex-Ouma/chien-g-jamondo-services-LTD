@@ -64,7 +64,7 @@
 
 You need to create a `.env.local` file with:
 ```
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/?appName=Cluster0
 ```
 
 **Never commit `.env.local` to Git!** It's already in `.gitignore`.

@@ -14,7 +14,7 @@ async function dbConnect() {
   if (!MONGODB_URI) {
     throw new Error(
       'Please define the MONGODB_URI environment variable in backend/.env.local\n' +
-      'Example: MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/misori?retryWrites=true&w=majority'
+      'Example: MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/?appName=Cluster0'
     );
   }
 

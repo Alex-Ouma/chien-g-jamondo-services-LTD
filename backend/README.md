@@ -17,7 +17,7 @@ cp .env.example .env.local
 ### 3. Configure MongoDB
 Add your MongoDB Atlas URI to `.env.local`:
 ```
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/misori?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/?appName=Cluster0
 ```
 
 ### 4. Start Development Server
@@ -68,7 +68,7 @@ backend/
 ### Environment Variables
 ```
 # MongoDB Connection (Required)
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/misori?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/?appName=Cluster0
 
 # Server Port (Optional, defaults to 5000)
 PORT=5000
