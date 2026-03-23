@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chien'g Jamondo Services Ltd.",
+  title: "KadeshBarnea Services Ltd.",
   description: "Multi-service company offering cyber services, branding solutions, cereal trading, and mobile banking services in Misori, Kenya",
   keywords: "cyber café, branding, cereal trading, mobile banking, M-Pesa, Kenya",
 };

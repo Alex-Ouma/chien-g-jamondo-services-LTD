@@ -1,10 +1,10 @@
-# Chien'g Jamondo Services Ltd. - Website
+# KadeshBarnea Services Ltd. - Website
 
-A professional, multi-service company website for Chien'g Jamondo Services Ltd., built with Next.js, React, and Tailwind CSS.
+A professional, multi-service company website for KadeshBarnea Services Ltd., built with Next.js, React, and Tailwind CSS.
 
 ## Overview
 
-Chien'g Jamondo Services Ltd. is a growing multi-service company based in Misori, Siaya County, Kenya. This website showcases our integrated services including:
+KadeshBarnea Services Ltd. is a growing multi-service company based in Misori, Siaya County, Kenya. This website showcases our integrated services including:
 
 - **Cyber & Branding Services** - Digital solutions, printing, branding, and government services
 - **Cereal Trading** - Quality agricultural products including maize, millet, sorghum, rice, and beans
@@ -80,4 +80,4 @@ For questions or support, contact:
 
 ## License
 
-This website is the property of Chien'g Jamondo Services Ltd.
+This website is the property of KadeshBarnea Services Ltd.
