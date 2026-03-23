@@ -1,39 +1,6 @@
 import ServiceCard from '@/components/ServiceCard';
 
 export default function ServicesPage() {
-  const cyberServices = [
-    'Internet access and computer services',
-    'Printing, photocopying, and scanning',
-    'Document typing and formatting',
-    'Online applications and registration',
-    'E-Citizen services',
-    'KRA PIN registration and filing',
-    'School and government online services',
-    'Branding packages (banners, posters, business cards, flyers, certificates)',
-    'Passport photos and ID photos'
-  ];
-
-  const cerealServices = [
-    'Supply of maize, millet, and sorghum',
-    'Rice (Pishori) distribution',
-    'Beans supply',
-    'Seed supply and preservation',
-    'Bulk and retail cereal sales',
-    'Distribution to retailers, schools, and institutions',
-    'Quality assurance and standardization',
-    'Reliable supply chains'
-  ];
-
-  const bankingServices = [
-    'M-Pesa deposits and withdrawals',
-    'Equity Bank agency services',
-    'KCB agency services',
-    'Co-operative Bank services',
-    'Airtime and bill payments',
-    'Funds transfer services',
-    'Mobile money services',
-    'Agency banking facilities'
-  ];
 
   return (
     <div className="bg-white">

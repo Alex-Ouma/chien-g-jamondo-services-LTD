@@ -36,13 +36,13 @@ export async function POST(request: NextRequest) {
       },
       { status: 201 }
     );
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Error saving message:', error);
     
-    // Handle validation errors from mongoose
-    if (error.name === 'ValidationError') {
-      const messages = Object.values(error.errors)
-        .map((err: any) => err.message)
+    if (error instanceof Error && 'name' in error && error.name === 'ValidationError') {
+      const mongooseError = error as unknown as { errors: Record<string, { message: string }> };
+      const messages = Object.values(mongooseError.errors)
+        .map((err) => err.message)
         .join(', ');
       return NextResponse.json(
         { error: messages },
@@ -59,6 +59,7 @@ export async function POST(request: NextRequest) {
 
 // Optional: GET endpoint to retrieve messages (admin use)
 export async function GET(request: NextRequest) {
+  console.log('GET /api/messages', request.url);
   try {
     // You can add authentication here later
     await dbConnect();

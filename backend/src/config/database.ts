@@ -7,7 +7,21 @@ interface CachedConnection {
   promise: Promise<typeof mongoose> | null;
 }
 
-let cached: CachedConnection = (global as any).mongoose || { conn: null, promise: null };
+declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
+  namespace NodeJS {
+    interface Global {
+      mongoose?: CachedConnection;
+    }
+  }
+}
+
+const globalWithMongoose = global as typeof globalThis & { mongoose?: CachedConnection };
+
+const cached: CachedConnection = globalWithMongoose.mongoose || { conn: null, promise: null };
+if (!globalWithMongoose.mongoose) {
+  globalWithMongoose.mongoose = cached;
+}
 
 async function dbConnect() {
   // Check for MongoDB URI when connection is attempted

@@ -109,7 +109,7 @@ export default function AboutPage() {
                 <h3 className="font-bold text-lg text-blue-900 mb-2">2026 - Foundation Year</h3>
                 <p className="text-gray-700">
                   Founded in 2026 in Misori, Siaya County, KadeshBarnea Services Ltd. began as a cyber café 
-                  and mobile money agency, serving the local community's digital and financial needs.
+                  and mobile money agency, serving the local community&apos;s digital and financial needs.
                 </p>
               </div>
               <div className="border-l-4 border-blue-900 pl-6">

@@ -36,13 +36,14 @@ router.post('/messages', async (req: Request, res: Response) => {
       message: 'Message sent successfully',
       data: newMessage,
     });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Error saving message:', error);
     
     // Handle validation errors from mongoose
-    if (error.name === 'ValidationError') {
-      const messages = Object.values(error.errors)
-        .map((err: any) => err.message)
+    if (error instanceof Error && 'name' in error && error.name === 'ValidationError') {
+      const mongooseError = error as unknown as { errors: Record<string, { message: string }> };
+      const messages = Object.values(mongooseError.errors)
+        .map((err) => err.message)
         .join(', ');
       return res.status(400).json({
         success: false,

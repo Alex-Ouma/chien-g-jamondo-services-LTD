@@ -55,8 +55,12 @@ app.listen(PORT, async () => {
   try {
     await dbConnect();
     console.log(`🗄️  MongoDB connected successfully`);
-  } catch (error: any) {
-    console.error('❌ MongoDB connection error:', error.message);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error('❌ MongoDB connection error:', error.message);
+    } else {
+      console.error('❌ MongoDB connection error:', error);
+    }
   }
 });
 
