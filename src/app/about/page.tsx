@@ -2,7 +2,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       {/* Header Section */}
-      <section className="bg-blue-900 text-white py-16">
+      <section className="bg-red-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold mb-4">About Us</h1>
           <p className="text-xl">Building trust and delivering excellence since 2026</p>
@@ -13,9 +13,9 @@ export default function AboutPage() {
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-blue-900">Company Profile</h2>
+            <h2 className="text-3xl font-bold mb-4 text-red-900">Company Profile</h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              Chien'g Jamondo Services Ltd. is a growing multi-service company based in Misori, Siaya County, Kenya. 
+              KadeshBarnea Services Ltd. is a growing multi-service company based in Misori, Siaya County, Kenya. 
               Established in 2026, the company operates with a strong focus on cyber services, branding services, 
               cereal trading, and mobile banking services.
             </p>
@@ -28,16 +28,16 @@ export default function AboutPage() {
 
           {/* Mission & Values */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-blue-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-blue-900">Our Mission</h3>
+            <div className="bg-red-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-red-900">Our Mission</h3>
               <p className="text-gray-700 leading-relaxed">
                 To empower individuals, institutions, and small businesses through accessible cyber services, 
                 quality agricultural products, and reliable mobile banking solutions that promote financial 
                 inclusion and sustainable growth.
               </p>
             </div>
-            <div className="bg-blue-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4 text-blue-900">Our Vision</h3>
+            <div className="bg-red-50 p-8 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4 text-red-900">Our Vision</h3>
               <p className="text-gray-700 leading-relaxed">
                 Our goal is to serve as a dependable partner in digital access, food supply, and financial 
                 inclusion—supporting economic development at the community and regional level. Thus bridging 
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
           {/* Core Values */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-8 text-blue-900">Core Values</h2>
+            <h2 className="text-3xl font-bold mb-8 text-red-900">Core Values</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 {
@@ -72,8 +72,8 @@ export default function AboutPage() {
                   desc: 'We promote responsible business practices that support long-term development.'
                 }
               ].map((value, idx) => (
-                <div key={idx} className="border-l-4 border-blue-900 pl-6 py-4">
-                  <h4 className="font-bold text-lg text-blue-900 mb-2">{value.title}</h4>
+                <div key={idx} className="border-l-4 border-red-900 pl-6 py-4">
+                  <h4 className="font-bold text-lg text-red-900 mb-2">{value.title}</h4>
                   <p className="text-gray-700">{value.desc}</p>
                 </div>
               ))}
@@ -82,7 +82,7 @@ export default function AboutPage() {
 
           {/* Guiding Principles */}
           <div className="mb-12 bg-gray-50 p-8 rounded-lg">
-            <h2 className="text-3xl font-bold mb-8 text-blue-900">Our Guiding Principles</h2>
+            <h2 className="text-3xl font-bold mb-8 text-red-900">Our Guiding Principles</h2>
             <div className="space-y-4">
               {[
                 'Customer First – We exist to serve and satisfy our clients.',
@@ -94,7 +94,7 @@ export default function AboutPage() {
                 'Ethical Conduct – We follow a strict code of ethics and legal compliance.'
               ].map((principle, idx) => (
                 <div key={idx} className="flex gap-4">
-                  <div className="text-blue-900 font-bold text-lg w-8 flex-shrink-0">✓</div>
+                  <div className="text-red-900 font-bold text-lg w-8 flex-shrink-0">✓</div>
                   <p className="text-gray-700">{principle}</p>
                 </div>
               ))}
@@ -108,7 +108,7 @@ export default function AboutPage() {
               <div className="border-l-4 border-blue-900 pl-6">
                 <h3 className="font-bold text-lg text-blue-900 mb-2">2026 - Foundation Year</h3>
                 <p className="text-gray-700">
-                  Founded in 2026 in Misori, Siaya County, Chien'g Jamondo Services Ltd. began as a cyber café 
+                  Founded in 2026 in Misori, Siaya County, KadeshBarnea Services Ltd. began as a cyber café 
                   and mobile money agency, serving the local community's digital and financial needs.
                 </p>
               </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
               <div className="border-l-4 border-blue-900 pl-6">
                 <h3 className="font-bold text-lg text-blue-900 mb-2">Present Day</h3>
                 <p className="text-gray-700">
-                  Today, Chien'g Jamondo Services Ltd. stands as a multi-service enterprise that supports digital 
+                  Today, KadeshBarnea Services Ltd. stands as a multi-service enterprise that supports digital 
                   access, food security, and financial inclusion for individuals, institutions, and businesses.
                 </p>
               </div>
@@ -192,7 +192,7 @@ export default function AboutPage() {
           <div className="bg-blue-900 text-white p-8 rounded-lg">
             <h2 className="text-2xl font-bold mb-4">Our Unique Selling Proposition</h2>
             <p className="text-lg leading-relaxed mb-4">
-              Chien'g Jamondo Services Ltd. stands out by offering cyber services, branding solutions, 
+              KadeshBarnea Services Ltd. stands out by offering cyber services, branding solutions, 
               cereal trading, and mobile banking services under one roof. This integrated model saves customers 
               time and cost while ensuring quality, convenience, and reliability.
             </p>

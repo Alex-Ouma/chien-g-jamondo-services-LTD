@@ -59,7 +59,7 @@ export default function ContactPage() {
   return (
     <div className="bg-white">
       {/* Header Section */}
-      <section className="bg-blue-900 text-white py-16">
+      <section className="bg-red-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
           <p className="text-xl">Get in touch with us for any inquiries or support</p>
@@ -72,34 +72,34 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {/* Contact Info */}
             <div>
-              <div className="bg-blue-50 p-6 rounded-lg mb-6">
-                <h3 className="font-bold text-lg text-blue-900 mb-4">📍 Location</h3>
+              <div className="bg-red-50 p-6 rounded-lg mb-6">
+                <h3 className="font-bold text-lg text-red-900 mb-4">📍 Location</h3>
                 <p className="text-gray-700">
                   Misori, Siaya County<br/>
                   Kenya
                 </p>
               </div>
 
-              <div className="bg-blue-50 p-6 rounded-lg mb-6">
-                <h3 className="font-bold text-lg text-blue-900 mb-4">📧 Email</h3>
+              <div className="bg-red-50 p-6 rounded-lg mb-6">
+                <h3 className="font-bold text-lg text-red-900 mb-4">📧 Email</h3>
                 <p className="text-gray-700">
-                  <a href="mailto:tonnymosesowino@gmail.com" className="text-blue-600 hover:text-blue-800">
+                  <a href="mailto:tonnymosesowino@gmail.com" className="text-red-600 hover:text-red-800">
                     tonnymosesowino@gmail.com
                   </a>
                 </p>
               </div>
 
-              <div className="bg-blue-50 p-6 rounded-lg mb-6">
-                <h3 className="font-bold text-lg text-blue-900 mb-4">📱 Phone</h3>
+              <div className="bg-red-50 p-6 rounded-lg mb-6">
+                <h3 className="font-bold text-lg text-red-900 mb-4">📱 Phone</h3>
                 <p className="text-gray-700">
-                  <a href="tel:+254703615836" className="text-blue-600 hover:text-blue-800">
-                    +254 703 615 836
+                  <a href="tel:+254759617201" className="text-red-600 hover:text-red-800">
+                    +254 759 617 201
                   </a>
                 </p>
               </div>
 
-              <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-bold text-lg text-blue-900 mb-4">🕒 Hours</h3>
+              <div className="bg-red-50 p-6 rounded-lg">
+                <h3 className="font-bold text-lg text-red-900 mb-4">🕒 Hours</h3>
                 <p className="text-gray-700">
                   Monday - Friday: 8:00 AM - 6:00 PM<br/>
                   Saturday: 9:00 AM - 4:00 PM<br/>
@@ -110,7 +110,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="md:col-span-2">
-              <h2 className="text-3xl font-bold mb-6 text-blue-900">Send us a Message</h2>
+              <h2 className="text-3xl font-bold mb-6 text-red-900">Send us a Message</h2>
               
               {submitted && (
                 <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
@@ -152,7 +152,7 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-900"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-red-900"
                     placeholder="Your email"
                   />
                 </div>
@@ -167,7 +167,7 @@ export default function ContactPage() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-900"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-red-900"
                     placeholder="Your phone number"
                   />
                 </div>
@@ -182,7 +182,7 @@ export default function ContactPage() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-900"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-red-900"
                   >
                     <option value="">Select a subject</option>
                     <option value="cyber">Cyber & Branding Services</option>
@@ -204,7 +204,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-900"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-red-900"
                     placeholder="Your message"
                   ></textarea>
                 </div>
@@ -215,7 +215,7 @@ export default function ContactPage() {
                   className={`w-full font-bold py-3 rounded-lg transition ${
                     loading
                       ? 'bg-gray-400 text-gray-600 cursor-not-allowed'
-                      : 'bg-blue-900 text-white hover:bg-blue-800'
+                      : 'bg-red-900 text-white hover:bg-red-800'
                   }`}
                 >
                   {loading ? 'Sending...' : 'Send Message'}
@@ -226,7 +226,7 @@ export default function ContactPage() {
 
           {/* Services Quick Access */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-8 text-blue-900 text-center">Need Help With Something Specific?</h2>
+            <h2 className="text-3xl font-bold mb-8 text-red-900 text-center">Need Help With Something Specific?</h2>
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 {
@@ -245,9 +245,9 @@ export default function ContactPage() {
                   contact: 'Phone: +254 703615836'
                 }
               ].map((service, idx) => (
-                <div key={idx} className="text-center bg-blue-50 p-6 rounded-lg">
+                <div key={idx} className="text-center bg-red-50 p-6 rounded-lg">
                   <div className="text-4xl mb-4">{service.icon}</div>
-                  <h3 className="font-bold text-blue-900 mb-2">{service.title}</h3>
+                  <h3 className="font-bold text-red-900 mb-2">{service.title}</h3>
                   <p className="text-sm text-gray-600">{service.contact}</p>
                 </div>
               ))}

@@ -38,7 +38,7 @@ export default function ServicesPage() {
   return (
     <div className="bg-white">
       {/* Header Section */}
-      <section className="bg-blue-900 text-white py-16">
+      <section className="bg-red-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold mb-4">Our Services</h1>
           <p className="text-xl">Comprehensive solutions for your digital, agricultural, and financial needs</p>
@@ -120,7 +120,7 @@ export default function ServicesPage() {
           <div className="py-8">
             <h2 className="text-3xl font-bold mb-4 text-blue-900">📱 Mobile Banking Services</h2>
             <p className="text-gray-700 text-lg mb-6">
-              Chien'g Jamondo Services Ltd. operates as a trusted mobile banking and agency banking service provider, 
+              KadeshBarnea Services Ltd. operates as a trusted mobile banking and agency banking service provider, 
               serving as a bridge between financial institutions and the community.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
@@ -182,7 +182,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4 text-blue-900">Ready to Experience Our Services?</h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            Contact us today to learn more about how Chien'g Jamondo Services can help your business grow.
+            Contact us today to learn more about how KadeshBarnea Services can help your business grow.
           </p>
           <a 
             href="/contact" 
